@@ -1,7 +1,6 @@
 package tw.kewang.ui.tile;
 
 import java.util.ArrayList;
-import tw.kewang.ui.tile.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;

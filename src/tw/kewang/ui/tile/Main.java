@@ -1,5 +1,6 @@
 package tw.kewang.ui.tile;
 
+import tw.kewang.ui.tile.TileGroup.CellProperty;
 import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.Point;
@@ -14,8 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.debug.hv.ViewServer;
-import tw.kewang.ui.tile.R;
-import tw.kewang.ui.tile.TileGroup.CellProperty;
 
 public class Main extends Activity {
 	private int i = 0;
@@ -104,16 +103,16 @@ public class Main extends Activity {
 				property.height = 50;
 				property.location = new Point(50 * i, 50 * i++);
 
-//				s1.getCurrentGroup().addCellProperty(property);
-				 group1.addCellProperty(property);
+				// s1.getCurrentGroup().addCellProperty(property);
+				group1.addCellProperty(property);
 			}
 		});
 
 		btnAddCell.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-//				s1.getCurrentGroup().addCell(getCell());
-				 group1.addCell(getCell());
+				// s1.getCurrentGroup().addCell(getCell());
+				group1.addCell(getCell());
 			}
 		});
 

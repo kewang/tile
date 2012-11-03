@@ -1,10 +1,9 @@
 package tw.kewang.ui.tile;
 
 import java.util.ArrayList;
-import tw.kewang.ui.tile.R;
+
 import tw.kewang.ui.tile.TileGroup.CellProperty;
 import tw.kewang.ui.tile.ViewAnimation.Runner;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -21,7 +20,6 @@ import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-
 
 /**
  * @author kewang

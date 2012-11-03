@@ -1,13 +1,15 @@
 package tw.kewang.ui.tile;
 
 import java.util.ArrayList;
-import tw.kewang.ui.tile.R;
 
 import android.support.v4.view.PagerAdapter;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
+/**
+ * @author kewang
+ */
 public class GroupAdapter extends PagerAdapter {
 	private ArrayList<TileGroup> groups;
 	private int current;

@@ -1,9 +1,8 @@
 package tw.kewang.ui.tile;
 
 import java.util.ArrayList;
-import tw.kewang.ui.tile.R;
-import tw.kewang.ui.tile.GroupAdapter.OnRemoveItemListener;
 
+import tw.kewang.ui.tile.GroupAdapter.OnRemoveItemListener;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -13,10 +12,8 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.View;
 
-
 /**
  * @author kewang
- * 
  */
 public class Sliding extends ViewPager implements OnRemoveItemListener {
 	private int holderSize;

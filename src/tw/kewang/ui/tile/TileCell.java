@@ -6,7 +6,6 @@ import android.graphics.Point;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import tw.kewang.ui.tile.R;
 
 /**
  * @author kewang

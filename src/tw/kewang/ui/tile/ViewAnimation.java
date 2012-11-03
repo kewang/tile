@@ -3,8 +3,10 @@ package tw.kewang.ui.tile;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
-import tw.kewang.ui.tile.R;
 
+/**
+ * @author kewang
+ */
 public class ViewAnimation {
 	public static void run(Animation animation, final View v, int duration,
 			final Runner runner) {
