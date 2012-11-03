@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TileAttrs">
+        <attr name="x" format="dimension" />
+        <attr name="y" format="dimension" />
+        <attr name="canCellIn" format="boolean" />
+        <attr name="canCellOut" format="boolean" />
+        <attr name="autoFill" format="boolean" />
+        <attr name="cellType" format="string" />
+        <attr name="maxCells" format="integer" />
+        <attr name="holderSize" format="dimension" />
+    </declare-styleable>
+
+</resources>
