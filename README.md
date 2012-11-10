@@ -12,11 +12,10 @@ can place any `TileGroup`s, `Sliding`s and built-in `View`s at Android.
 * `void addGroup(TileGroup group, int x, int y)`: add `TileGroup` to point `(x, y)`.
 * `void addWidget(View widget, int x, int y)`: add `View` to point `(x, y)`.
 * `void removeGroup(TileGroup group)`: remove `TileGroup`.
-* `ArrayList<TileGroup> getGroups()`:
-* `ArrayList<TileGroup> getGroups(boolean)`:
-* `ArrayList<Sliding> getSlidings()`:
-* `ArrayList<View> getWidgets()`:
-* `void addView(View, LayoutParams)`:
+* `ArrayList<TileGroup> getGroups()`: return all `TileGroup`s of `ArrayList`, excluding `Sliding`'s `TileGroup`s
+* `ArrayList<TileGroup> getGroups(boolean includeSliding)`: return all `TileGroup`s of `ArrayList`, `includeSliding` determine if including `Sliding`'s `TileGroup`s
+* `ArrayList<Sliding> getSlidings()`: return all `Sliding`s of `ArrayList`
+* `ArrayList<View> getWidgets()`: return all `View`s of `ArrayList`
 * `void startDrag()`:
 * `void stopDrag()`:
 * `void setOnCellDragListener(OnDragListener)`:
