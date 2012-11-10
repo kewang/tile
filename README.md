@@ -5,6 +5,7 @@ This is a **drag & drop** View for Android, you can feel free to use it. e.g. zo
 
 ### `Tile`
 can place any `TileGroup`s, `Sliding`s and built-in `View`s at Android.
+
 #### Attributes
 * `holderSize`: Holder is a square area of `TileGroup` left/right side tightly. If `Tile` has `Sliding`s, can determine holder size to use it.
 
@@ -16,13 +17,24 @@ can place any `TileGroup`s, `Sliding`s and built-in `View`s at Android.
 * `ArrayList<TileGroup> getGroups(boolean includeSliding)`: return all `TileGroup`s of `ArrayList`, `includeSliding` determine if including `Sliding`'s `TileGroup`s
 * `ArrayList<Sliding> getSlidings()`: return all `Sliding`s of `ArrayList`
 * `ArrayList<View> getWidgets()`: return all `View`s of `ArrayList`
-* `void startDrag()`:
-* `void stopDrag()`:
-* `void setOnCellDragListener(OnDragListener)`:
-* `void setOnCellLongClickListener(OnLongClickListener)`:
-* `void setOnCellClickListener(OnClickListener)`:
-* `void setOnExchangeListener(OnExchangeListener)`:
+* `void startDrag()`: start to drag `TileCell`
+* `void stopDrag()`: stop to drag `TileCell`
+
 #### Callbacks
+
+##### `OnDragListener`
+
+* `setOnCellDragListener(OnDragListener listener)`:
+ 	* `void onDragStart(TileGroup group, TileCell cell)`
+	* `void onDragStop(TileGroup group, TileCell cell, boolean animation)`
+
+##### `OnLongClickListener`
+
+* `void setOnCellLongClickListener(OnLongClickListener listener)`:
+
+##### `OnClickListener`
+
+* `void setOnCellClickListener(OnClickListener listener)`:
 
 ### `TileGroup`
 can place any `TileCell`s and built-in `View`s at Android.

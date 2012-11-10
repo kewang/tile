@@ -981,16 +981,33 @@ public class Tile extends FrameLayout {
 	}
 
 	public interface OnClickListener {
+		/**
+		 * @param group
+		 * @param cell
+		 */
 		public void onClick(TileGroup group, TileCell cell);
 	}
 
 	public interface OnLongClickListener {
+		/**
+		 * @param group
+		 * @param cell
+		 */
 		public void onLongClick(TileGroup group, TileCell cell);
 	}
 
 	public interface OnDragListener {
+		/**
+		 * @param group
+		 * @param cell
+		 */
 		public void onDragStart(TileGroup group, TileCell cell);
 
+		/**
+		 * @param group
+		 * @param cell
+		 * @param animation
+		 */
 		public void onDragStop(TileGroup group, TileCell cell, boolean animation);
 	}
 
