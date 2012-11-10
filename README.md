@@ -7,6 +7,7 @@ This is a **drag & drop** View for Android, you can feel free to use it. e.g. zo
 can place any `TileGroup`s, `Sliding`s and built-in `View`s at Android.
 #### Attributes
 * `holderSize`: Holder is a square area of `TileGroup` left/right side tightly. If `Tile` has `Sliding`s, can determine holder size to use it.
+
 #### Methods
 * `void addGroup(TileGroup group, int x, int y)`: add `TileGroup` to point `(x, y)`.
 * `void addWidget(View widget, int x, int y)`: add `View` to point `(x, y)`.
