@@ -239,10 +239,20 @@ public class TileGroup extends FrameLayout {
 		}
 	}
 
+	/**
+	 * 傳回目前位置
+	 * 
+	 * @return
+	 */
 	public Point getLocation() {
 		return location;
 	}
 
+	/**
+	 * 設定目前位置
+	 * 
+	 * @param location
+	 */
 	public void setLocation(Point location) {
 		this.location = location;
 
