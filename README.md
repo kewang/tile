@@ -100,3 +100,14 @@ This is a **drag & drop** View for Android, you can feel free to use it. e.g. zo
 
 </LinearLayout>
 </code>
+### Java code
+	tile2 = (Tile) findViewById(R.id.tile_2);
+	group1 = (TileGroup) findViewById(R.id.group_1);
+	s1 = (Sliding) findViewById(R.id.s1);
+
+	tile2.setOnCellLongClickListener(new Tile.OnLongClickListener() {
+		@Override
+		public void onLongClick(TileGroup group, TileCell cell) {
+			tile2.startDrag();
+		}
+	});
