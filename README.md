@@ -4,6 +4,7 @@ This is a **drag & drop** View for Android, you can feel free to use it. e.g. zo
 ## Architecture
 * `Tile` class can place any `TileGroup`s and built-in `View`s at Android.
 * `TileGroup` class can place any `TileCell`s and built-in `View`s at Android.
+* `TileGroup.CellProperty` class can describe `TileCell`'s width, height, and position.
 * `TileCell` class is minimal element at this library, only can click & drag it.
 * `Sliding` class only can place `TileGroup`s to slide.
 
