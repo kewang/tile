@@ -1,10 +1,102 @@
 # About Tile
-This is a drag & drop View for Android, you can feel free to use it. e.g. zoom-in, zoom-out, cell click, cell long-click...etc.
+This is a **drag & drop** View for Android, you can feel free to use it. e.g. zoom-in, zoom-out, cell click, cell long-click...etc.
 
 ## Architecture
-* A `Tile` class can place any `TileGroup`s and built-in `View`s at Android.
-* A `TileGroup` class can place any `TileCell`s and built-in `View`s at Android.
-* A `Sliding` class only can place `TileGroup`s to slide.
+* `Tile` class can place any `TileGroup`s and built-in `View`s at Android.
+* `TileGroup` class can place any `TileCell`s and built-in `View`s at Android.
+* `TileCell` class is minimal element at this library, only can click & drag it.
+* `Sliding` class only can place `TileGroup`s to slide.
 
 ## How-to use
-### At first
+### Layout XML
+<code>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tile="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <tw.kewang.ui.tile.Tile
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#888888" >
+
+        <tw.kewang.ui.tile.TileGroup
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:background="#00ffff"
+            tile:maxCells="3"
+            tile:x="450dp"
+            tile:y="50dp" >
+
+            <tw.kewang.ui.tile.TileCell
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#ff0000"
+                tile:x="50dp"
+                tile:y="50dp" />
+
+            <tw.kewang.ui.tile.TileCell
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#00ff00"
+                tile:x="100dp"
+                tile:y="150dp" />
+
+            <tw.kewang.ui.tile.TileCell
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="#0000ff"
+                tile:x="150dp"
+                tile:y="150dp" />
+        </tw.kewang.ui.tile.TileGroup>
+
+        <Button
+            android:id="@+id/button_outer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:text="Outer Group" />
+
+        <tw.kewang.ui.tile.TileGroup
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:background="#ffff00"
+            tile:maxCells="3"
+            tile:x="850dp"
+            tile:y="50dp" >
+
+            <tw.kewang.ui.tile.TileCell
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#336699"
+                tile:x="0dp"
+                tile:y="0dp" />
+
+            <tw.kewang.ui.tile.TileCell
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="#663399"
+                tile:x="100dp"
+                tile:y="50dp" />
+
+            <tw.kewang.ui.tile.TileCell
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="#669933"
+                tile:x="0dp"
+                tile:y="150dp" />
+
+            <Button
+                android:id="@+id/button_inner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="325dp"
+                android:text="Inner Group" />
+        </tw.kewang.ui.tile.TileGroup>
+    </tw.kewang.ui.tile.Tile>
+
+</LinearLayout>
+</code>
