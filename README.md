@@ -9,7 +9,6 @@ This is a **drag & drop** View for Android, you can feel free to use it. e.g. zo
 
 ## How-to use
 ### Layout XML
-<code>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tile="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -99,15 +98,37 @@ This is a **drag & drop** View for Android, you can feel free to use it. e.g. zo
     </tw.kewang.ui.tile.Tile>
 
 </LinearLayout>
-</code>
 ### Java code
+#### Part 1
 	tile2 = (Tile) findViewById(R.id.tile_2);
 	group1 = (TileGroup) findViewById(R.id.group_1);
 	s1 = (Sliding) findViewById(R.id.s1);
 
+#### Part 2
 	tile2.setOnCellLongClickListener(new Tile.OnLongClickListener() {
 		@Override
 		public void onLongClick(TileGroup group, TileCell cell) {
 			tile2.startDrag();
 		}
 	});
+
+#### Part 3
+	CellProperty property = new TileGroup.CellProperty();
+
+	property.width = 50;
+	property.height = 50;
+	property.location = new Point(50 * i, 50 * i++);
+
+	group1.addCellProperty(property);
+
+#### Part 4
+	group1.addCell(getCell());
+
+	private TileCell getCell() {
+		TileCell cell = new TileCell(this);
+
+		cell.setBackgroundColor(Color.rgb((int) (Math.random() * 0xff),
+				(int) (Math.random() * 0xff), (int) (Math.random() * 0xff)));
+
+		return cell;
+	}
