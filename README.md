@@ -2,7 +2,7 @@
 This is a **drag & drop** View for Android, you can feel free to use it. e.g. zoom-in, zoom-out, cell click, cell long-click...etc.
 
 ## Architecture
-* `Tile` class can place any `TileGroup`s and built-in `View`s at Android.
+* `Tile` class can place any `TileGroup`s, `Sliding`s and built-in `View`s at Android.
 * `TileGroup` class can place any `TileCell`s and built-in `View`s at Android.
 * `TileGroup.CellProperty` class can describe `TileCell`'s width, height, and position.
 * `TileCell` class is minimal element at this library, only can click & drag it.
@@ -10,6 +10,7 @@ This is a **drag & drop** View for Android, you can feel free to use it. e.g. zo
 
 ## How-to use
 ### Layout XML
+<pre>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tile="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -99,6 +100,7 @@ This is a **drag & drop** View for Android, you can feel free to use it. e.g. zo
     </tw.kewang.ui.tile.Tile>
 
 </LinearLayout>
+</pre>
 ### Java code
 #### Part 1
 	tile2 = (Tile) findViewById(R.id.tile_2);
