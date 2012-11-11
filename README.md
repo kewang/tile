@@ -7,7 +7,7 @@ This is a **drag & drop** View for Android, you can feel free to use it. e.g. zo
 can place any `TileGroup`s, `Sliding`s and built-in `View`s at Android.
 
 #### Attributes
-* `holderSize`: Holder is a square area of `TileGroup` left/right side tightly. If `Tile` has `Sliding`s, can determine holder size to use it.
+* `int holderSize`: Holder is a square area of `TileGroup` left/right side tightly. If `Tile` has `Sliding`s, can determine holder size to use it.
 
 #### Methods
 * `void addGroup(TileGroup group, int x, int y)`: add `TileGroup` to point `(x, y)`.
@@ -42,10 +42,10 @@ can place any `TileGroup`s, `Sliding`s and built-in `View`s at Android.
 can place any `TileCell`s and built-in `View`s at Android.
 
 #### Attributes
-* `location`: determine `TileGroup`'s position at `Tile`.
-* `canCellIn`: determine if `TileCell` can drag in.
-* `canCellOut`: determine if `TileCell` can drag out.
-* `maxCells`: determine the number of maximum `TileCell`s at `TileGroup`.
+* `Point location`: determine `TileGroup`'s position at `Tile`.
+* `boolean canCellIn`: determine if `TileCell` can drag in.
+* `boolean canCellOut`: determine if `TileCell` can drag out.
+* `int maxCells`: determine the number of maximum `TileCell`s at `TileGroup`.
 
 #### Methods
 * `void addCell(TileCell cell, int index)`: add `TileCell` to position `index`.
@@ -75,8 +75,17 @@ can place any `TileCell`s and built-in `View`s at Android.
 ### `TileGroup.CellProperty`
 can describe `TileCell`'s width, height, and position.
 
+#### Attributes
+* `Bitmap background`: determine the CellProperty's `background`, if `cell` is empty.
+* `TileGroup group`: determine the `cell`'s `TileGroup`.
+* `TileCell cell`: determine the `CellProperty` contains `TileCell`'s instance.
+* `Point location`: determine the `CellProperty`'s location.
+* `int width`: determine the `CellProperty`'s width.
+* `int height`: determine the `CellProperty`'s height.
+
 ### `TileCell`
 is minimal element at this library, only can click & drag it.
+
 #### Attributes
 #### Methods
 
