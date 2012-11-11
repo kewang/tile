@@ -87,12 +87,35 @@ can describe `TileCell`'s width, height, and position.
 is minimal element at this library, only can click & drag it.
 
 #### Attributes
+* `Point location`: determine `TileCell`'s position at `TileGroup`.
+* `String name`: determine `TileCell`'s `name`.
 #### Methods
+* `void setSize(int width, int height)`: determine `TileCell`'s `width` and `height`.
+* `Point getLocation()`: return current location.
+* `void setLocation(Point location)`: determine `TileCell`'s location.
+* `void setLocation(int x, int y)`:  determine `TileCell`'s location point `(x, y)`.
+* `TileGroup getGroup()`: return `TileCell`'s parent `TileGroup`.
+* `String getName()`: return `TileCell`'s `name`.
+* `void setName(String name)`: determine `TileCell`'s `name`.
 
 ### `Sliding`
 only can place `TileGroup`s to slide.
+
 #### Attributes
+* `int holderSize`: Holder is a square area of `TileGroup` left/right side tightly. If `Tile` has `Sliding`s, can determine holder size to use it.
+
 #### Methods
+* `void removeAtFirst()`: remove the first `TileGroup` of `Sliding`.
+* `void removeAtLast()`: remove the last `TileGroup` of `Sliding`.
+* `void add(TileGroup child)`: add `TileGroup` to `Sliding`.
+* `void removeAt(int index)`: remove the `index + 1`-th `TileGroup` of `Sliding`.
+* `int getHolderSize()`: return `holderSize`.
+* `void setHolderSize(int holderSize)`: Holder is a square area of `TileGroup` left/right side tightly. If `Tile` has `Sliding`s, can determine holder size to use it.
+* `void next()`: slide to the next `TileGroup`.
+* `void previous()`: slide to the previous `TileGroup`.
+* `ArrayList<TileGroup> getGroups()`:  return an `ArrayList` of `TileGroup`s.
+* `TileGroup getGroup(int index)`: return the `index + 1`-th `TileGroup` of `Sliding`.
+* `TileGroup getCurrentGroup()`: return the current `TileGroup`
 
 ## How-to use
 
