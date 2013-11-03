@@ -1,10 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="tw.kewang.ui.tile"
+    package="tw.kewang.tile"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
-        android:targetSdkVersion="11" />
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
 
 </manifest>

@@ -1,9 +1,9 @@
-package tw.kewang.ui.tile;
+package tw.kewang.tile;
 
 import java.util.ArrayList;
 
-import tw.kewang.ui.tile.TileGroup.CellProperty;
-import tw.kewang.ui.tile.ViewAnimation.Runner;
+import tw.kewang.tile.TileGroup.CellProperty;
+import tw.kewang.tile.ViewAnimation.Runner;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;

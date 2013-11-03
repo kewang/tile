@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <tw.kewang.ui.tile.Tile
+    <tw.kewang.tile.Tile
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="right"
         android:background="#888888" >
 
-        <tw.kewang.ui.tile.TileGroup
+        <tw.kewang.tile.TileGroup
             android:layout_width="300dp"
             android:layout_height="400dp"
             android:background="#00ffff"
@@ -17,27 +17,27 @@
             tile:x="450dp"
             tile:y="50dp" >
 
-            <tw.kewang.ui.tile.TileCell
+            <tw.kewang.tile.TileCell
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:background="#ff0000"
                 tile:x="50dp"
                 tile:y="50dp" />
 
-            <tw.kewang.ui.tile.TileCell
+            <tw.kewang.tile.TileCell
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="#00ff00"
                 tile:x="100dp"
                 tile:y="150dp" />
 
-            <tw.kewang.ui.tile.TileCell
+            <tw.kewang.tile.TileCell
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:background="#0000ff"
                 tile:x="150dp"
                 tile:y="150dp" />
-        </tw.kewang.ui.tile.TileGroup>
+        </tw.kewang.tile.TileGroup>
 
         <Button
             android:id="@+id/button_outer"
@@ -47,7 +47,7 @@
             android:layout_marginTop="50dp"
             android:text="Outer Group" />
 
-        <tw.kewang.ui.tile.TileGroup
+        <tw.kewang.tile.TileGroup
             android:layout_width="300dp"
             android:layout_height="400dp"
             android:background="#ffff00"
@@ -55,21 +55,21 @@
             tile:x="850dp"
             tile:y="50dp" >
 
-            <tw.kewang.ui.tile.TileCell
+            <tw.kewang.tile.TileCell
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:background="#336699"
                 tile:x="0dp"
                 tile:y="0dp" />
 
-            <tw.kewang.ui.tile.TileCell
+            <tw.kewang.tile.TileCell
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:background="#663399"
                 tile:x="100dp"
                 tile:y="50dp" />
 
-            <tw.kewang.ui.tile.TileCell
+            <tw.kewang.tile.TileCell
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:background="#669933"
@@ -83,7 +83,7 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="325dp"
                 android:text="Inner Group" />
-        </tw.kewang.ui.tile.TileGroup>
-    </tw.kewang.ui.tile.Tile>
+        </tw.kewang.tile.TileGroup>
+    </tw.kewang.tile.Tile>
 
 </LinearLayout>

@@ -1,7 +1,7 @@
-package tw.kewang.tiledemo;
+package tw.kewang.tile.samples;
 
-import tw.kewang.tiledemo.feature.BasicLayout1;
-import tw.kewang.tiledemo.feature.BasicLayout2;
+import tw.kewang.tile.samples.feature.BasicLayout1;
+import tw.kewang.tile.samples.feature.BasicLayout2;
 import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;

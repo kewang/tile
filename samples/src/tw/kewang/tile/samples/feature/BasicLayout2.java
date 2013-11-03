@@ -1,7 +1,7 @@
-package tw.kewang.tiledemo.feature;
+package tw.kewang.tile.samples.feature;
 
-import tw.kewang.tiledemo.BaseActivity;
-import tw.kewang.tiledemo.R;
+import tw.kewang.tile.samples.BaseActivity;
+import tw.kewang.tile.samples.R;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;

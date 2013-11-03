@@ -1,4 +1,4 @@
-package tw.kewang.ui.tile;
+package tw.kewang.tile;
 
 import android.view.View;
 import android.view.animation.Animation;

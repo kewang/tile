@@ -1,4 +1,4 @@
-package tw.kewang.tiledemo;
+package tw.kewang.tile.samples;
 
 import android.app.Activity;
 import android.os.Bundle;

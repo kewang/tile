@@ -1,8 +1,8 @@
-package tw.kewang.ui.tile;
+package tw.kewang.tile;
 
 import java.util.ArrayList;
 
-import tw.kewang.ui.tile.GroupAdapter.OnRemoveItemListener;
+import tw.kewang.tile.GroupAdapter.OnRemoveItemListener;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
