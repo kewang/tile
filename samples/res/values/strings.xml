@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">TileDemo</string>
+    <string name="app_name">tile-samples</string>
 
     <string-array name="features">
         <item>Basic Layout 1</item>
