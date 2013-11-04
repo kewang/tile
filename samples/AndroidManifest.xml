@@ -26,6 +26,9 @@
         <activity
             android:name=".feature.BasicLayout2"
             android:label="@string/app_name" />
+        <activity
+            android:name=".feature.BasicLayout3"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import com.android.debug.hv.ViewServer;
 
-public class Basic extends BaseActivity {
+public class BasicLayout3 extends BaseActivity {
 	private int i = 0;
 	private Tile tile2;
 	private TileGroup group1;
@@ -134,7 +134,7 @@ public class Basic extends BaseActivity {
 		txtView.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(Basic.this, ((TextView) v).getText().toString(),
+				Toast.makeText(BasicLayout3.this, ((TextView) v).getText().toString(),
 						Toast.LENGTH_SHORT).show();
 			}
 		});

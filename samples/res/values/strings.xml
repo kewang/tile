@@ -5,9 +5,7 @@
     <string-array name="features">
         <item>Basic Layout 1</item>
         <item>Basic Layout 2</item>
-        <item>Basic</item>
-        <item>Basic</item>
-        <item>Basic</item>
+        <item>Basic Layout 3</item>
     </string-array>
 
 </resources>

@@ -1,5 +1,6 @@
 package tw.kewang.tile.samples;
 
+import tw.kewang.tile.samples.feature.BasicLayout3;
 import tw.kewang.tile.samples.feature.BasicLayout1;
 import tw.kewang.tile.samples.feature.BasicLayout2;
 import android.content.Intent;
@@ -40,6 +41,10 @@ public class Main extends BaseActivity implements OnItemClickListener {
 			break;
 		case 1:
 			startActivity(new Intent(this, BasicLayout2.class));
+
+			break;
+		case 2:
+			startActivity(new Intent(this, BasicLayout3.class));
 
 			break;
 		}
